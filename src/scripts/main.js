@@ -11,8 +11,8 @@ document.addEventListener('click', (e) => {
     const clickX = e.offsetX;
     const clickY = e.offsetY;
 
-    let spiderX = clickX - spiderHeight / 2;
-    let spiderY = clickY - spiderWidth / 2;
+    let spiderX = clickX - spiderWidth / 2;
+    let spiderY = clickY - spiderHeight / 2;
 
     spiderX = Math.max(0, Math.min(spiderX, wall.clientWidth - spiderWidth));
     spiderY = Math.max(0, Math.min(spiderY, wall.clientHeight - spiderHeight));
